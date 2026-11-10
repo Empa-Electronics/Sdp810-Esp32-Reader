@@ -56,16 +56,21 @@ The sensor measures `pressure("+" port) − pressure("−" port)`.
 
 ## Quick start (Windows)
 
-1. Install [Python 3.12 or 3.13](https://www.python.org/downloads/) and tick
-   **Add python.exe to PATH**. Very new Python versions can lack ready-made packages for
-   numpy and matplotlib.
-2. Plug in the ESP32-C3 with a data USB cable. If no COM port appears, install the
+1. Plug in the ESP32-C3 with a data USB cable. If no COM port appears, install the
    [CP210x driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers).
-3. Double-click **`install.bat`**, or run `install.bat COM5` to choose the port.
+2. Double-click **`install.bat`**, or run `install.bat COM5` to choose the port.
 
-The installer creates a Python environment in `tools\.venv`, installs the packages, flashes
-`firmware\sdp810_reader_esp32c3.bin` and offers to start the plotter. Later, start the
-plotter with `tools\run.bat`.
+The installer:
+
+1. Finds Python 3.9 or newer. If there is none, it offers to download Python 3.12.10 from
+   python.org, checks the download against a fixed SHA-256 checksum, and installs it for
+   the current user (no administrator rights needed).
+2. Creates a Python environment in `tools\.venv` and installs the packages.
+3. Finds the board's COM port and flashes `firmware\sdp810_reader_esp32c3.bin`.
+4. Offers to start the plotter. Later, start it with `tools\run.bat`.
+
+If you install Python yourself, use 3.12 or 3.13 and tick **Add python.exe to PATH**. Very
+new Python versions can lack ready-made packages for numpy and matplotlib.
 
 If flashing fails, close any other program using the port. You can also hold **BOOT**,
 press and release **RESET**, release **BOOT**, and run the installer again.
