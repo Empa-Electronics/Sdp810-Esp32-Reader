@@ -1,0 +1,5 @@
+# Windows batch files only run reliably with CRLF line endings
+*.bat text eol=crlf
+*.sh  text eol=lf
+*.bin binary
+*.png binary

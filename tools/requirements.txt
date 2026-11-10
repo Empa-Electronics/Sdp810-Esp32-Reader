@@ -1,0 +1,4 @@
+pyserial>=3.5
+numpy
+matplotlib>=3.6
+esptool>=4.8,<5
