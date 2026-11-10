@@ -6,7 +6,7 @@ Bu proje, bir **ESP32-C3** kartı ve Sensirion **SDP810** basınç sensörüyle 
 algılar. Sensöre bağlı bir hortumdan hava çektiğinizde kartın üzerindeki ışık yavaşça
 kırmızıya döner. Hortuma üflemek ışığı yakmaz.
 
-Işık, ısıtıcı bir bobinin yerini tutar; örneğin elektronik olarak çalışan bir nargilede.
+Işık, ısıtıcı bir bobinin yerini tutar.
 Bilgisayarınızdaki bir program basıncı canlı olarak grafikte gösterir ve bir dosyaya kaydeder.
 
 ![Algılanan yedi çekişi gösteren ekran](docs/dashboard.png)
@@ -141,7 +141,7 @@ sınırlar yazılımdadır; kartın kendisi arızalanırsa sizi korumazlar.
 - "+" girişine gelen rüzgâr veya "−" girişine ulaşan hava, nefes çekme gibi görünebilir.
 - Sensörün yakınındaki çok yüksek bas sesi (yaklaşık 110 dB ve üzeri) çekişlerin
   kaçırılmasına yol açabilir. Bu bir simülasyondan gelir ve donanımda test edilmemiştir.
-- Ayarlar, tam bir nargileden değil, az sayıda test kaydından gelir.
+- Ayarlar, bitmiş bir cihazdan değil, az sayıda test kaydından gelir.
 
 ---
 

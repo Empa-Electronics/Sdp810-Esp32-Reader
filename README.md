@@ -6,7 +6,7 @@ This project turns an **ESP32-C3** board and a Sensirion **SDP810** pressure sen
 inhale detector. When you draw air through a tube connected to the sensor, the light on the
 board fades to red. Blowing into the tube does not turn it on.
 
-The light stands in for a heating coil, for example in an electronically activated hookah.
+The light stands in for a heating coil.
 A program for your PC shows the pressure live as a graph and saves it to a file.
 
 ![Dashboard showing seven detected inhales](docs/dashboard.png)
@@ -138,7 +138,7 @@ fails.
 - Wind on the "+" port, or air reaching the "−" port, can look like an inhale.
 - Very loud bass near the sensor, around 110 dB or more, could cause missed inhales. This
   comes from a simulation and has not been tested on hardware.
-- The settings come from a small number of test recordings, not from a complete hookah.
+- The settings come from a small number of test recordings, not from a finished device.
 
 ---
 
