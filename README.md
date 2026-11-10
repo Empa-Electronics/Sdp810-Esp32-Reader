@@ -1,5 +1,7 @@
 # SDP810 Reader – inhale detector for ESP32-C3
 
+**English** | [Türkçe](README.tr.md)
+
 This project turns an **ESP32-C3** board and a Sensirion **SDP810** pressure sensor into an
 inhale detector. When you draw air through a tube connected to the sensor, the light on the
 board fades to red. Blowing into the tube does not turn it on.
